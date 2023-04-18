@@ -8,19 +8,19 @@
 
 * Clone sql-challenge repository to personal computer, then create the folder structure:
 
-            *employeesql                     # Folder for all sql files
-                    *schema.sql              # Creates Tables
-                    *sql-challenge.sql       # Main Challenge file       
-            *data                            # Given data files
-                    *departments.csv
-                    *dept_emp.csv
-                    *dept_manager.csv
-                    *employees.csv
-                    *salaries.csv
-                    *titles.csv
-            *QuickDBD-export.png             # ERD Created through QuickDataBaseDiagrams exported in a png file
-            *QuickDBD-export.sql             # ERD Created through QuickDataBaseDiagrams exported in a sql file
-            *README.md
+            * employeesql                     # Folder for all sql files
+                    * schema.sql              # Creates Tables
+                    * sql-challenge.sql       # Main Challenge file       
+            * data                            # Given data files
+                    * departments.csv
+                    * dept_emp.csv
+                    * dept_manager.csv
+                    * employees.csv
+                    * salaries.csv
+                    * titles.csv
+            * QuickDBD-export.png             # ERD Created through QuickDataBaseDiagrams exported in a png file
+            * QuickDBD-export.sql             # ERD Created through QuickDataBaseDiagrams exported in a sql file
+            * README.md
 
 * Examined the brief given on the bootcampspot module challenge #9 page, checked csv files in Visual Studio Code.
 
