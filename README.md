@@ -10,7 +10,8 @@
 
             * employeesql                     # Folder for all sql files
                     * schema.sql              # Creates Tables
-                    * sql-challenge.sql       # Main Challenge file       
+                    * sql-challenge.sql       # Main Challenge file 
+                    * Part_1.csv - Part_8.csv # CSV formatted output for the parts of the challenge      
             * data                            # Given data files
                     * departments.csv
                     * dept_emp.csv
@@ -52,39 +53,44 @@
 
 * Began with reference Select * statements for each of the tables.
 
-* Listed the employee number, last name, first name, sex, and salary of each employee.
+* Part 1: Listed the employee number, last name, first name, sex, and salary of each employee.
     * Selected columns for employee number, last name, first name, and sex from the **employees** table.
     * Created an Inner Join with the **salaries** table based on employee number. 
 
-* Listed the first name, last name, and hire date for the employees who were hired in 1986.
+* Part 2: Listed the first name, last name, and hire date for the employees who were hired in 1986.
     * Selected columns for first name, last name, and hire date from **employees** table.
     * Isolated the hire date to only those dates with "1986" listed as the  year.
 
-* Listed the manager of each department along with their department number, department name, employee number, last name, and first name.
+* Part 3: Listed the manager of each department along with their department number, department name, employee number, last name, and first name.
     * Selected both columns from the **department_manager** table; department number and employee number. 
     * With a Left Join add the columns corresponding with department name from the **departments** table. 
     * Joined this with the **employees** table based on the employee number.
 
-* Listed first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
+* Part 4: Listed the department number for each employee along with that employee’s employee number, last name, first name, and department name.
+    * Listed the employee numbers from the **department_employee** table
+    * Listed the associating departments by linking the department number from the **departments** table and the employee title id from the **department_employees** table.
+    * Listed the associated first and last name of the employees by linking the employee number listed with the employee number from the **employees** table.
+
+* Part 5: Listed first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
     * Selected first name, last name and sex columns from the **employees** table. 
     * Gave the conditions:
         * First Name = "Hercules"
         * Leftmost Letter of Last Name = "L"
 
-* Listed each employee in the Sales department, including their employee number, last name, and first name.
+* Part 6: Listed each employee in the Sales department, including their employee number, last name, and first name.
     * Selected columnns for first name, last name, and employee number from the **employees** table.
     * Used the employee number to link to the **department_employees** table
     * Used the fact that the "emp_title_id" column from the **department_employees** table corresponded with the "dept_no" from the **departments** table
         to filter down to the department name from the **departments** table = "Sales". 
 
-* List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
+* Part 7: List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
     * Selected column names for the employee numbers, last names, first names from the **employees** table.
     * Linked between employee numbers on the **employees** table and the **department_employees** table to employee title ids.
     * Linked between employee title ids from the **department_employees** table and the department numbers from the **departments** table
         to get the department names.
     * Created filter to only display those in the Sales or Development departments.
 
-* Listed the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
+* Part 8: Listed the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
     * Selected column names to display the last name and the count of instances of that first name (calling it "count of last names")
         from the **employees** table.
     * Grouped them by the last name.
